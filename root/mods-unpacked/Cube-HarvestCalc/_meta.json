@@ -1,0 +1,11 @@
+{
+  "id": "Cube-HarvestCalc",
+  "name": "Harvest Calc",
+  "version": "1.0.0",
+  "compatible_game_version": ["0.6.1.6"],
+  "authors": ["Cube"],
+  "description": "Adds a tooltip to items with harvesting, to show when they will be profitable.",
+  "website_url": "https://github.com/BrotatoMods",
+  "dependencies": [],
+  "incompatibilities": []
+}
