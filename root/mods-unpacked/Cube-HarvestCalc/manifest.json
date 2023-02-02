@@ -1,11 +1,17 @@
 {
-  "id": "Cube-HarvestCalc",
-  "name": "Harvest Calc",
-  "version": "1.0.0",
-  "compatible_game_version": ["0.6.1.6"],
-  "authors": ["Cube"],
-  "description": "Adds a tooltip to items with harvesting, to show when they will be profitable.",
-  "website_url": "https://github.com/BrotatoMods",
-  "dependencies": [],
-  "incompatibilities": []
+	"name": "HarvestCalc",
+	"namespace": "Cube",
+	"version_number": "1.1.0",
+	"description": "Adds a tooltip to items with harvesting, to show when they will be profitable.",
+	"website_url": "https://github.com/BrotatoMods/Brotato-Harvest-Calc",
+	"dependencies": [],
+	"extra": {
+		"godot": {
+			"incompatibilities": [],
+			"authors": ["Cube"],
+			"compatible_mod_loader_version": "3.0.0",
+			"compatible_game_version": ["0.6.1.6"],
+			"config_defaults": {}
+		}
+	}
 }

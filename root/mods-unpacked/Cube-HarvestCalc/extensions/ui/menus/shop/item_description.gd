@@ -1,6 +1,6 @@
 extends "res://ui/menus/shop/item_description.gd"
 
-const LOG_NAME = "Cube-HarvestCalc"
+const HARVESTMOD_LOG = "Cube-HarvestCalc"
 
 # Extensions
 # =============================================================================
