@@ -7,10 +7,10 @@ const LOG_NAME = "Cube-HarvestCalc"
 
 func set_item(item_data:ItemParentData)->void :
 	.set_item(item_data)
-	
+
 	_cube_harvest_calc_extends_set_item(item_data)
-	
-	
+
+
 # Custom
 # =============================================================================
 
@@ -21,13 +21,13 @@ func _cube_harvest_calc_extends_set_item(item_data):
 				var harvesting_value = effect.value
 				var item_cost = ItemService.get_value(RunData.current_wave, item_data.value)
 				var current_harvesting_gain = RunData.get_stat("harvesting_growth")
-				
+
 				var current_profit_loss
 				var current_harvesting
 				var previous_profit_loss
 				var previous_harvesting
 				get_effects().bbcode_text = get_effects().bbcode_text + "\n [color=#736C6B]Profit at wave end:[/color]"
-				
+
 				for wave in range(RunData.current_wave, 20):
 					if wave == RunData.current_wave:
 						current_harvesting = harvesting_value
@@ -38,15 +38,15 @@ func _cube_harvest_calc_extends_set_item(item_data):
 
 					if wave == RunData.current_wave or wave == 19 or (previous_profit_loss < 0 and current_profit_loss >= 0):
 						get_effects().bbcode_text = get_effects().bbcode_text + "\n [color=#736C6B]Wave " + str(wave) + ": [/color]"
-						
+
 						if current_profit_loss < 0:
 							get_effects().bbcode_text = get_effects().bbcode_text + "[color=#FF0000]"
 						if current_profit_loss > 0:
 							get_effects().bbcode_text = get_effects().bbcode_text + "[color=#00FB00]"
 						if current_profit_loss == 0:
 							get_effects().bbcode_text = get_effects().bbcode_text + "[color=#535353]"
-						
+
 						get_effects().bbcode_text = get_effects().bbcode_text + str(current_profit_loss) + "[/color]"
-						
+
 					previous_harvesting = current_harvesting
 					previous_profit_loss = current_profit_loss
