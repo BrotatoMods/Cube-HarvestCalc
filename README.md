@@ -2,7 +2,11 @@
 
 Adds a tooltip to items with harvesting, to show when they will be profitable.
 
-Requires [ModLoader](https://github.com/GodotModding/godot-mod-loader) (4.1+).
+
+## Requirements
+
+* [ModLoader](https://github.com/GodotModding/godot-mod-loader) - v4.1+
+* *No other dependencies*
 
 
 ## Download
